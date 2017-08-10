@@ -40,14 +40,14 @@ public class LoginController extends HttpServlet {
 		if(userName.equalsIgnoreCase("sourabh") && password.equals("maharaj")){
 			response.sendRedirect("success.jsp");	
 		} else{
-			response.sendRedirect("error.jsp");
+			response.sendRedirect("error.jsp.........");
 		}
 		
 
 		
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		out.println("This is the Test Servlet");
+		out.println("This is the Test Servlet........");
 
 		Enumeration headerNames = request.getHeaderNames();
 		while (headerNames.hasMoreElements()) {
